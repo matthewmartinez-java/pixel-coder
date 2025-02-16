@@ -1,0 +1,36 @@
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="loginFormContainer">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username" required> <br>
+                <input type="password" id="password" placeholder="Password" required> <br>
+                <button type="submit">Login</button> <br>
+            </form>
+            <p>Need an account? <a href="#" id="switchToRegister">Register</a></p>
+        </div>
+        <div id="registerFormContainer" style="display: none;">
+            <form id="registerForm">
+                <h2>Register</h2>
+                <input type="text" id="newuser" placeholder="Username" required> <br>
+                <input type="email" id="email" placeholder="Email" required> <br>
+                <input type="password" id="password1" placeholder="Password" required> <br>
+                <input type="password" id="password2" placeholder="Confirm Password" required> <br>
+                <button type="submit">Register</button> <br>
+            </form>
+            <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+        </div>
+        <div id ="settingsFormContainer" style="display: none;">
+            <form id="settingsForm">
+                <h2>Settings</h2>
+                <input type="text" id="settingsUsername" placeholder="Username" required><br>
+                <input type="email" id="settingsEmail" placeholder="Email" required><br>
+                <input type="password" id="settingsCurrentPassword" placeholder="Current Password" required><br>
+                <input type="password" id="settingsNewPassword" placeholder="New Password"><br>
+                <input type="password" id="settingsConfirmPassword" placeholder="Confirm New Password"><br>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</div>
