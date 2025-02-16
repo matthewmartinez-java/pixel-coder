@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pixel Commerce</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/gruvbox-dark.css">
+        <link rel="stylesheet" type="text/css" href="css/gruvbox-light.css" disabled>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="headerPlaceholder"></div>
+        <div id="modalPlaceholder"></div>
+
+        <div id="itemContainer" class="itempage-container">
+            <div class="item-details">
+                <div class="item-image-container"></div>
+                <div class="item-info-container"></div>
+            </div>
+            <div id="reviewFormContainer" class="review-form-container">
+                <h3>Add a Review</h3>
+                <form id="reviewForm" class="review-form">
+                    <div class="rating-bar">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+            <div id="reviewsContainer" class="reviews-container"></div>
+        </div>
+        <h2>Related Items</h2>
+        <div id="relatedItemsContainer" class="related-items-container"></div>
+        <script src="js/itempage.js"></script>
+
+        <div id="footerPlaceholder"></div>
+
+    </body>
+</html>
